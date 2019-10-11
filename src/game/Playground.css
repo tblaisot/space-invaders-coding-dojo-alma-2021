@@ -1,0 +1,6 @@
+.Game-background {
+  width: 1200px;
+  height: 800px;
+  background-image: url('../assets/background.png');
+  position: absolute;
+}

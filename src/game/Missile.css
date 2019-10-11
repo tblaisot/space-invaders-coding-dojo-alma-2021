@@ -1,0 +1,6 @@
+.Game-missile {
+  width: 10px;
+  height: 28px;
+  /*background-image: url('assets/missile1.png');*/
+  position: absolute;
+}
