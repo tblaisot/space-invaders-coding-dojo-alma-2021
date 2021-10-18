@@ -71,6 +71,14 @@ export class Hero extends MoveableRectangle {
       // Right
       this.accelerateRight();
     }
+    if (key === 'ArrowUp') {
+      // up
+      this.accelerateUp();
+    }
+    if (key === 'ArrowDown') {
+      // Right
+      this.accelerateDown();
+    }
     // TODO: implémenter les mouvements de haut en bas
     // les touches haut et bas on les codes respectifs ArrowUp et ArrowDown
   }
