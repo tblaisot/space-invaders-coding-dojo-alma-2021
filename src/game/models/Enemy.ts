@@ -29,5 +29,6 @@ export class Enemy extends Rectangle {
     console.log('Ennemy fire missile');
     // TODO: implementer le lancement de missiles
     // il suffit d'ajouter un missile (crée via this.createMissile()) dans la liste this.missiles
+    this.missiles.push(this.createMissile());
   }
 }

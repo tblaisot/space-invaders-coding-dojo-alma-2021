@@ -1,3 +1,4 @@
+import { Enemies } from '../Enemies';
 import { Enemy } from './Enemy';
 import { EnemyWave } from './EnemyWave';
 import { Hero } from './Hero';
@@ -84,6 +85,7 @@ export class Game {
     this.collisionDetection();
     // TODO faire tirer des missiles a intervalle random par les ennemis
     // utiliser Math.random() pour un nombre entre 0 et 1
+    this.wave.enemies.forEach(enemy => { if (Math.random() >= 0.99) enemy.fireMissile() });
   }
 
   /**
