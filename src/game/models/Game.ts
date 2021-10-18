@@ -99,6 +99,20 @@ export class Game {
     ) {
       for (
         let missileIndex = 0;
+        missileIndex < this.wave.enemies[enemyIndex].missiles.length;
+        missileIndex++
+
+      ) {
+        if (
+          detectCollision(
+            this.wave.enemies[enemyIndex].missiles[missileIndex],
+            this.hero
+          )) {
+          this.gameOver()
+        }
+      }
+      for (
+        let missileIndex = 0;
         missileIndex < this.hero.missiles.length;
         missileIndex++
       ) {
